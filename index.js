@@ -32,7 +32,11 @@ function getFeedHtml(){
             </div>
         </div>`;
     })
-    console.log(feedHTML);
+    return feedHTML;
 }
 
-getFeedHtml();
+function render() {
+    document.querySelector("#feed").innerHTML = getFeedHtml();
+}
+
+render();
